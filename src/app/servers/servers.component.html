@@ -1,3 +1,6 @@
+<input class="form-control" (input)="trackText($event)">
+{{text}}
+
 <div class="col-xs-12">
     <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="serverOn()">Server</button>
     <p>{{stringserverOn}}</p>
