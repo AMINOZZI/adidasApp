@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
   allowNewServer: boolean = false;
   stringserverOn: string = '';
+  text: string = '';
 
   constructor() {
     //arrow Function
@@ -18,6 +19,10 @@ export class ServersComponent implements OnInit {
 
   serverOn() {
     this.stringserverOn = 'Server is online ';
+  }
+
+  trackText(event: Event) {
+    this.text = (<HTMLInputElement>event.target).value;
   }
 
   ngOnInit() {}
