@@ -1,7 +1,5 @@
 <div class="col-xs-12">
-    <button class="btn btn-primary" 
-    
-    [disabled]="!allowNewServer">Server</button>
-    <p [innerHtml]="allowNewServer"></p>
+    <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="serverOn()">Server</button>
+    <p>{{stringserverOn}}</p>
     <app-server></app-server>
 </div>
