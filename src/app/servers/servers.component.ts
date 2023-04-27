@@ -19,7 +19,7 @@ export class ServersComponent implements OnInit {
   }
 
   serverOn() {
-    this.stringserverOn = 'Server is online ';
+    this.stringserverOn = 'Server is online and name is ' + this.ngModelTest;
   }
 
   trackText(event: Event) {
