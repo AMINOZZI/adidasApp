@@ -9,6 +9,7 @@ export class ServersComponent implements OnInit {
   allowNewServer: boolean = false;
   stringserverOn: string = '';
   text: string = '';
+  ngModelTest = 'test';
 
   constructor() {
     //arrow Function
