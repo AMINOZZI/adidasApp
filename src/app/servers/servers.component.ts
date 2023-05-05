@@ -10,6 +10,7 @@ export class ServersComponent implements OnInit {
   stringserverOn: string = '';
   text: string = '';
   ngModelTest = 'test';
+  serverWasCreated: boolean = false;
 
   constructor() {
     //arrow Function
@@ -19,6 +20,7 @@ export class ServersComponent implements OnInit {
   }
 
   serverOn() {
+    this.serverWasCreated = true;
     this.stringserverOn = 'Server is online and name is ' + this.ngModelTest;
   }
 
