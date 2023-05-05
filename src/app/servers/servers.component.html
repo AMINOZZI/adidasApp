@@ -5,6 +5,10 @@
 
 <div class="col-xs-12">
     <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="serverOn()">Server</button>
-    <p>{{stringserverOn}}</p>
+    <!-- <p>{{stringserverOn}}</p> -->
+    <p *ngIf="serverWasCreated;else noServer">Server was created {{ngModelTest}}</p>
+    <ng-template #noServer>
+        <p>no Server was created</p>
+    </ng-template>
     <app-server></app-server>
 </div>
