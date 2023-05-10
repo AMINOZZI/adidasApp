@@ -7,4 +7,5 @@
     <br>
     {{getServerStatus()}} in this case use a method
 </p> -->
-<p [ngStyle]="{backgroundColor:getColor()}">{{'Server'}} with id {{serverId}} is {{getServerStatus()}}</p>
+<p [ngStyle]="{backgroundColor:getColor()}" [ngClass]="{online: serverStatus === 'online'}">{{'Server'}} with id
+    {{serverId }} is {{getServerStatus()}}</p>

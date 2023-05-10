@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
   allowNewServer: boolean = false;
-  stringserverOn: string = '';
+  stringserverOn: string = 'test server';
   text: string = '';
   ngModelTest = 'test';
   serverWasCreated: boolean = false;
+  servers = ['serverOne ', 'serverTwo'];
 
   constructor() {
     //arrow Function
@@ -21,6 +22,7 @@ export class ServersComponent implements OnInit {
 
   serverOn() {
     this.serverWasCreated = true;
+    this.servers.push(this.stringserverOn);
     this.stringserverOn = 'Server is online and name is ' + this.ngModelTest;
   }
 
